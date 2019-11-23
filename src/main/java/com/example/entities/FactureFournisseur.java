@@ -29,7 +29,7 @@ public class FactureFournisseur implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public FactureFournisseur(int id, Fournisseur fournisseur, int totale, Collection<MedicamentItem> medicamentItems) {
+	public FactureFournisseur(Long id, Fournisseur fournisseur, int totale, Collection<MedicamentItem> medicamentItems) {
 		super();
 		this.id = id;
 		this.fournisseur = fournisseur;
@@ -37,10 +37,10 @@ public class FactureFournisseur implements Serializable {
 		this.medicamentItems = medicamentItems;
 	}
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public Fournisseur getFournisseur() {
